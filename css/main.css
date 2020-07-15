@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pragati+Narrow:wght@400;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1d201f;
+  color: #fffffa;
+  font-family: "Pragati Narrow", sans-serif;
+}
+
+body header {
+  background-color: #9381ff;
+  text-align: center;
+  padding: 3rem;
+}
+
+body header h1 {
+  margin: 0;
+  font-family: "Bungee", cursive;
+  font-size: 2.5rem;
+}
+
+body header p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+body .main .repos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  width: 50%;
+  row-gap: 3rem;
+  justify-items: center;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+body .main .repos .section-title {
+  font-family: "Bungee", cursive;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  margin: 0;
+}
+
+body .main .repos .repo {
+  width: 80%;
+  border: 2px solid #6247aa;
+  color: #fffffa;
+  border-radius: 1rem;
+  text-decoration: none;
+  position: relative;
+}
+
+body .main .repos .repo * {
+  margin: 0;
+  padding: 0 1rem;
+}
+
+body .main .repos .repo h3 {
+  background-color: #6247aa;
+  border-top-right-radius: 0.8rem;
+  border-top-left-radius: 0.8rem;
+}
+
+body .main .repos .repo .desc {
+  padding: 1rem 1rem 2rem 1rem;
+}
+
+body .main .repos .repo .language {
+  position: absolute;
+  bottom: 0;
+  left: 1.2rem;
+}
+
+body .main .repos .repo .language::before {
+  content: " ";
+  position: absolute;
+  left: -0.2rem;
+  width: 1rem;
+  height: 1rem;
+  top: calc(50% - 0.5rem);
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+body .main .repos .repo .javascript::before {
+  background-color: #fc6471;
+}
+
+body .main .repos .repo .html::before {
+  background-color: #fc9f5b;
+}
+
+body .main .repos .repo .java::before {
+  background-color: #16bac5;
+}
+
+body .main .repos .repo:hover {
+  -webkit-animation: 0.1s bgFade forwards;
+          animation: 0.1s bgFade forwards;
+}
+
+@-webkit-keyframes bgFade {
+  100% {
+    background-color: #6247aa;
+  }
+}
+
+@keyframes bgFade {
+  100% {
+    background-color: #6247aa;
+  }
+}
+/*# sourceMappingURL=main.css.map */
